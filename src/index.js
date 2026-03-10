@@ -11,3 +11,5 @@ app.use(express.json());
 app.use("/api/applications", applicationRoutes);
 
 export default app;  // Export 'app' so it can be used in server.js
+
+// Test comment to trigger CI/CD
