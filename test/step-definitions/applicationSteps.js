@@ -44,7 +44,7 @@ When("I send POST request to {string}", async function (endpoint) {
 Then("the response status should be {int}", function (status) {
   console.log("Actual Status:", response.status);
   console.log("Response Body:", response.body);
-   assert.equal(response.status, status);
+  //  assert.equal(response.status, status);
   // Intentional failure for demo
-  // assert.equal(response.status, 999); // 999 is not the real status
+  assert.equal(response.status, 999); // 999 is not the real status
 });
